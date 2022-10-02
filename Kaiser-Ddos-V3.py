@@ -61,7 +61,7 @@ class Home:
            "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
            "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
            "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt",
-           "https://api.openproxylist.xyz/socks5.txt
+           "https://api.openproxylist.xyz/socks5.txt",
            "https://www.freeproxychecker.com/result/socks5_proxies.txt",
            "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/proxy.txt",
            "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt",
