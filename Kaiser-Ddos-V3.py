@@ -77,7 +77,7 @@ class Home:
            "http://alexa.lr2b.com/proxylist.txt",
            "http://rootjazz.com/proxies/proxies.txt",
            "https://www.freeproxychecker.com/result/http_proxies.txt",
-                      https://api.proxyscrape.com/v2?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+                      "https://api.proxyscrape.com/v2?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
            "http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http",
            "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt",
            "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
