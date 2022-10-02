@@ -104,10 +104,9 @@ class Home:
 				time.sleep(1)
 
 	def home(self): # don't edit this banner lol
-		print(f"""
-                        {Color.LG}▒█░▄▀ ░█▀▀█ ▀█▀ ▒█▀▀▀█ ▒█▀▀▀ ▒█▀▀█   ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░{Color.LB}
-            {Color.LB}▒█▀▄░ ▒█▄▄█ ▒█░ ░▀▀▀▄▄ ▒█▀▀▀ ▒█▄▄▀   ░▒█░░ ▒█░░▒█ ▒█░░▒█ ▒█░{Color.LC}
-            {Color.LC}▒█░▒█ ▒█░▒█ ▄█▄ ▒█▄▄▄█ ▒█▄▄▄ ▒█░▒█   ░▒█░░ ▒█▄▄▄█ ▒█▄▄▄█ ▒█▄▄█{Color.LG}
+		print(f"""{Color.LG}▒█░▄▀ ░█▀▀█ ▀█▀ ▒█▀▀▀█ ▒█▀▀▀ ▒█▀▀█   ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░{Color.LB}
+                          {Color.LB}▒█▀▄░ ▒█▄▄█ ▒█░ ░▀▀▀▄▄ ▒█▀▀▀ ▒█▄▄▀   ░▒█░░ ▒█░░▒█ ▒█░░▒█ ▒█░{Color.LC}
+                          {Color.LC}▒█░▒█ ▒█░▒█ ▄█▄ ▒█▄▄▄█ ▒█▄▄▄ ▒█░▒█   ░▒█░░ ▒█▄▄▄█ ▒█▄▄▄█ ▒█▄▄█{Color.LG}
     {Color.LR}[{Color.LG}>     Made with ☕ By HuyKaiser PROCODER    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Proxy")
