@@ -115,7 +115,7 @@ class Home:
 		print("\n")
 		while True:
 			try:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					os.system('clear')
@@ -134,13 +134,13 @@ class Home:
 				elif option in ['home', 'HOME']:
 					self.home()
 				elif option in ['clear', 'CLEAR']:
-					os.system('clear');Kaiser-Ddos-V3.home()
+					os.system('clear');Kaiser.home()
 				elif option in ['help', 'HELP', '?']:
 					print(self.help)
 				elif option in ['dev', 'DEV']:
 					print(self.dev)
 				elif option in ['exit', 'EXIT']:
-					subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
+					subprocess.run(['pkill -f Kaiser.py'], shell=True)
 				elif option in ['stop', 'STOP']:
 					subprocess.run(['pkill screen'], shell=True)
 					print(f"{Color.LG} [!] Attack Stopped!")
@@ -313,7 +313,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" SOCKS5 PROXY")
 		print("\n")
 		while True:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					with open("http.txt", 'w') as p:
@@ -343,7 +343,7 @@ class Tool:
 				elif option in ['dev', 'DEV']:
 					print(self.dev)
 				elif option in ['exit', 'EXIT']:
-					subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
+					subprocess.run(['pkill -f Kaiser.py'], shell=True)
 				elif option in ['stop', 'STOP']:
 					subprocess.run(['pkill screen'], shell=True)
 					print(f"{Color.LG} [!] Attack Stopped!")
@@ -372,7 +372,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" EXTRACT LINK")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				while True:
@@ -424,7 +424,7 @@ class Tool:
 			elif option in ['dev', 'DEV']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
+				subprocess.run(['pkill -f Kaiser.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -488,7 +488,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" Layer7")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				os.system('clear');self.l4()
@@ -503,7 +503,7 @@ class Tool:
 			elif option in ['dev', 'Dev']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
+				subprocess.run(['pkill -f Kaiser.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -532,7 +532,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Layer4"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Layer4"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				try:
@@ -596,7 +596,7 @@ class Tool:
 			elif option in ['dev', 'DEV']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
+				subprocess.run(['pkill -f Kaiser.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
@@ -626,7 +626,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"KAISER-DDOS-V3"+Color.LB+"@"+Color.LG+"Layer7"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Kaiser"+Color.LB+"@"+Color.LG+"Layer7"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				try:
@@ -673,7 +673,7 @@ class Tool:
 			elif option in ['dev', 'DEV']:
 				print(self.dev)
 			elif option in ['exit', 'EXIT']:
-				subprocess.run(['pkill -f Kaiser-Ddos-V3.py'], shell=True)
+				subprocess.run(['pkill -f Kaiser.py'], shell=True)
 			elif option in ['stop', 'STOP']:
 				subprocess.run(['pkill screen'], shell=True)
 				print(f"{Color.LG} [!] Attack Stopped!")
